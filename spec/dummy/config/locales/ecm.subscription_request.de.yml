@@ -1,0 +1,16 @@
+de:
+  mail_form:
+    models:
+      subscription_request: Abonemment Anfrage 
+    attributes:
+      subscription_request:
+        fullname: Name
+        email: E-Mail Adresse
+        message: Nachricht
+  ecm:
+    contact_form:
+      attributes:
+        subscription_request:
+          form_title: Abo Formular
+          title: Neue Abo Anfrage erhalten
+          subject: Neue Abo Anfrage

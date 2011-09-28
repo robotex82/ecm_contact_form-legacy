@@ -1,0 +1,16 @@
+en:
+  mail_form:
+    models:
+      subscription_request: Subscription request 
+    attributes:
+      subscription_request:
+        fullname: Fullname
+        email: E-Mail
+        message: Message
+  ecm:
+    contact_form:
+      attributes:
+        subscription_request:
+          form_title: Subscription request - Form
+          title: Subscription request
+          subject: New Subscription request 

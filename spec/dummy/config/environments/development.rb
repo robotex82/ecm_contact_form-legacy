@@ -22,5 +22,13 @@ Dummy::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  # Add host to default url options for devise
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  config.action_mailer.smtp_settings = {
+    :address => "mail.arcor.de",
+    :port => 25,
+  }
 end
 

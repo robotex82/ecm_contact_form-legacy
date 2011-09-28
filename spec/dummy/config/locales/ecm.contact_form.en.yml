@@ -1,0 +1,7 @@
+en:
+  back: Back
+  ecm:
+    contact_form:
+      submit: Send request
+      notices:
+        devliered: Your %{name} has been delivered."
