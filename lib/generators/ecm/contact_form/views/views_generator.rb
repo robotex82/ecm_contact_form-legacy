@@ -22,7 +22,7 @@ module Ecm
         
         def generate_views
           template "_form.html.erb", File.join(view_path, "_form.html.erb")
-          template "new.html.erb", File.join(view_path, "new.html.erb")                  
+          template "index.html.erb", File.join(view_path, "index.html.erb")                  
         end      
       end
     end

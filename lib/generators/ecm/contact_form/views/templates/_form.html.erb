@@ -1,7 +1,7 @@
 <%%= form_for @<%= instance_name %> do |f| %>
   <%% if @<%= instance_name %>.errors.any? %>
     <div id="error_explanation">
-      <h2><%%= pluralize(@<%= instance_name %>.errors.count, "error") %> prohibited this <%= human_name %> from being delivered:</h2>
+      <h2><%= t('activemodel.errors.template.header.other', :model => @contact_request.class.model_name.human, :count => @contact_request.errors.count) %></h2>
 
       <ul>
       <%% @<%= instance_name %>.errors.full_messages.each do |msg| %>

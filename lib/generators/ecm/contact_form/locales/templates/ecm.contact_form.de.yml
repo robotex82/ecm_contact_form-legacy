@@ -4,13 +4,23 @@ de:
       <%= instance_name %>: <%= human_name %> 
     attributes:
       <%= instance_name %>:
-        fullname: Name
-        email: E-Mail Adresse
-        message: Nachricht
+        fullname: "Name"
+        email: "E-Mail Adresse"
+        message: "Nachricht"
+    errors:
+      models:
+        <%= instance_name %>:
+          attributes:
+            fullname:
+              blank: "darf nicht leer sein."    
+            email:
+              blank: "darf nicht leer sein."    
+            message:
+              blank: "darf nicht leer sein."      
   ecm:
     contact_form:
       attributes:
         <%= instance_name %>:
-          form_title: <%= human_name %> - Formular
-          title: <%= human_name %>
-          subject: Neue <%= human_name %>
+          form_title: "<%= human_name %> - Formular"
+          title: "<%= human_name %>"
+          subject: Neue "<%= human_name %>"
