@@ -3,10 +3,10 @@
 Gem::Specification.new do |s|
   s.authors = "Roberto Vasquez Angel"
   s.name = "ecm_contact_form"
-  s.summary = "Insert EcmContactForm summary."
+  s.summary = "Provides easy generation of contact forms"
   s.description = "Insert EcmContactForm description."
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.add_dependency('mail_form')
   s.add_dependency('ecm_core')
 end
