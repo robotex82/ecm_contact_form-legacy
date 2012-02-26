@@ -1,16 +1,26 @@
 de:
   mail_form:
     models:
-      subscription_request: Abonemment Anfrage 
+      subscription_request: Subscription request 
     attributes:
       subscription_request:
-        fullname: Name
-        email: E-Mail Adresse
-        message: Nachricht
+        fullname: "Name"
+        email: "E-Mail Adresse"
+        message: "Nachricht"
+    errors:
+      models:
+        subscription_request:
+          attributes:
+            fullname:
+              blank: "darf nicht leer sein."    
+            email:
+              blank: "darf nicht leer sein."    
+            message:
+              blank: "darf nicht leer sein."      
   ecm:
     contact_form:
       attributes:
         subscription_request:
-          form_title: Abo Formular
-          title: Neue Abo Anfrage erhalten
-          subject: Neue Abo Anfrage
+          form_title: "Subscription request - Formular"
+          title: "Subscription request"
+          subject: Neue "Subscription request"

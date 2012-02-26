@@ -21,6 +21,10 @@ module Ecm
         def generate_views
           generate "ecm:contact_form:views", name
         end
+        
+        def generate_routes
+          generate "ecm:contact_form:routes", name
+        end  
       end
     end
   end

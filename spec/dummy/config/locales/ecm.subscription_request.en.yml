@@ -4,13 +4,23 @@ en:
       subscription_request: Subscription request 
     attributes:
       subscription_request:
-        fullname: Fullname
-        email: E-Mail
-        message: Message
+        fullname: "Fullname"
+        email: "E-Mail"
+        message: "Message"
+    errors:
+      models:
+        subscription_request:
+          attributes:
+            fullname:
+              blank: "can't be blank."    
+            email:
+              blank: "can't be blank."    
+            message:
+              blank: "can't be blank."           
   ecm:
     contact_form:
       attributes:
         subscription_request:
-          form_title: Subscription request - Form
-          title: Subscription request
-          subject: New Subscription request 
+          form_title: "Subscription request - Form"
+          title: "Subscription request"
+          subject: "New Subscription request"

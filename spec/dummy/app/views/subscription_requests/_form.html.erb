@@ -1,7 +1,7 @@
 <%= form_for @subscription_request do |f| %>
   <% if @subscription_request.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@subscription_request.errors.count, "error") %> prohibited this Subscription request from being delivered:</h2>
+      <h2><%= t('activemodel.errors.template.header.other', :model => @subscription_request.class.model_name.human, :count => @subscription_request.errors.count) %></h2>
 
       <ul>
       <% @subscription_request.errors.full_messages.each do |msg| %>
